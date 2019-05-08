@@ -92,9 +92,8 @@ header a:hover{
 }
 
 #newsletter{
-    padding:50px;
-    color:#717171;
-    background:#000000
+    padding:40px;
+    background: rgb(22, 20, 25);
 }
 
 #newsleter h1{
@@ -113,7 +112,7 @@ header a:hover{
 }
 
 #boxes{
-    margin-top:20px;
+    margin-top:5px;
     background:#272727;
 ;
 }
@@ -123,10 +122,14 @@ header a:hover{
     text-align: center;
     width:30%;
     padding:10px;
+   
+   
+
 }
 
 #boxes .box img{
     width:150px;
+    border: 5px solid white
 }
 
 footer{
@@ -140,3 +143,7 @@ footer{
 h3 {
     background-color: #fff;
 }
+
+@import'http://code/ionframework.com/ionicons/2.0.1/css/ionicons.min.css'
+
+
