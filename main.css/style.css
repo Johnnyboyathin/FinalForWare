@@ -12,6 +12,7 @@ body{
     width:80%;
     margin: auto;
     overflow: hidden;
+    
 }
 
 
@@ -22,11 +23,20 @@ ul{
 
 .button_1{
     height:38px;
-    background: #ffffff;
+    background: rgb(22, 20, 25);
     border:0;
     padding-left: 20px;
     padding-right: 20px;
     color: #ffffff;
+    border: 1px solid white
+}
+
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 
 
@@ -44,6 +54,7 @@ header a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
+    padding-top 0;
     
 }
 
@@ -59,6 +70,8 @@ header #branding{
 
 header #branding h1{
     margin: 0;
+    font-family: sans-serif;
+    
 }
 
 header nav{
@@ -68,6 +81,7 @@ header nav{
 header .highlight, header .current a{
     color: #ffffff;
     font-weight: Bold;
+    
 }
 header a:hover{
     color:#cccccc;
@@ -92,17 +106,19 @@ header a:hover{
 }
 
 #newsletter{
-    padding:40px;
-    background: rgb(22, 20, 25);
+    padding:0;
+    background: #35424a;
+    border: 3px solid white
 }
 
-#newsleter h1{
+#newsletter h1{
     float: left;
+    color: #f2f2f2;
 }
 
 #newsletter form{
-    float:right
-        margin-top:15px;
+    float:right;
+    margin-top:15px;
     
 }
 #newsletter input[type="email"]{
@@ -112,8 +128,8 @@ header a:hover{
 }
 
 #boxes{
-    margin-top:5px;
-    background:#272727;
+    
+    background: rgb(22, 20, 25);
 ;
 }
 
@@ -132,6 +148,17 @@ header a:hover{
     border: 5px solid white
 }
 
+aside#sidebar{
+    float: right;
+    width:30%;
+    margin-top:10px;
+}
+
+article#main-col{
+    float: left;
+    width:65%;
+}
+
 footer{
     padding: 20px;
     margin-top:20 px;
@@ -144,6 +171,85 @@ h3 {
     background-color: #fff;
 }
 
-@import'http://code/ionframework.com/ionicons/2.0.1/css/ionicons.min.css'
+.navbar{
+    background-color:rgb(22, 20, 25);
+    overflow: hidden;
+    height:63px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color:#f2f2f2;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size:17px;
+}
+
+.navbar ul{
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color:#fff;
+}
+
+.side-nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    background-color:#111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top:60px;
+    transition: 0.5s;
+}
+
+.sidenav a{
+    padding:10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color:#ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover{
+    color:#000;
+}
+
+.side-nav .btn-close{
+    position: absolute;
+    top:0;
+    right:22px;
+    font-size:36px;
+    margin-left: 50px;
+}
+
+h9{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+h9:after{
+    content: '';
+    background: white;
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 10px auto;
+}
+
 
 

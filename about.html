@@ -2,28 +2,77 @@
 <html>
   <head>
       <meta charset="utf-8">
-      <meta name="viewport" contnet="width=device-width,
-       initial-scale=1.0">
+      <meta name="viewport" contnet="width=device-width">
       <meta name="description" content="Affordable and Profetional web design">
       <meta name="keywords" content="web design, affordable web design, profetional web design">
       <meta name="author" content="John Naranjo">
-      <title>Martin Luther King | About</title>
+      <title>Martin Luther King | Welcome</title>
       <link rel="stylesheet" href="main.css/style.css">
+      
+      <script type="text/javascript">
+        Function togglemenu(){
+            
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+      
+      </script>
 </head>
 <body>
   <header>
     <div class="container">
+        <nav class="navbar">
+        
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+              <svg width="30" height="30">
+               <path d="M0,5 30,5" stroke="#fff"
+               stroke-width="5"/>
+               <path d="M0,15 30,15" stroke="#fff"
+               stroke-width="5"/>
+               <path d="M0,25 30,25" stroke="#fff"
+               stroke-width="5"/>
+              </svg>
+            </a>
+          </span>
+        </nav>
+        
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" 
+            onclick="closeSlideMenu()">&times;</a>
+            <a href="#">Email</a>
+            <a href="#">Faceook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+
+        <script>
+           function openSlideMenu(){
+               document.getElementById('side-menu').style.width
+               = '250px';
+               document.getElementById('main').style.marginLeft
+               = '250px';
+               
+           }
+            
+            function closeSlideMenu(){
+               document.getElementById('side-menu').style.width
+               = '0';
+               document.getElementById('main').style.marginLeft
+               = '0';
+            }
+        </script>
       <div id="branding">
-          <h1><span class="highlight"> Johnnyboyathin Article </span> </h1>
+          <h9><span class="highlight"> Johnnyboyathin Article </span> </h9>
     </div>
     <nav>
          <ul>
-             <li><a href="index.html"> Home</a></li>  
+             <li class="current"><a href="index.html"> Home</a></li>  
              <li><a href="about.html"> About</a></li>
              <li><a href="services.html"> Services</a></li>
             
         </ul>
     </nav>
+  
     </div>
 </header>
     <section id="newsletter">
@@ -39,9 +88,22 @@
     <section id="main">
       <div class="container">
           <article id="main-col">
-              <h1 class="page-title">About King </h1>
-              <p> Martin Luther King Jr. is the main man who was Murdered by the cause of racism for inforcing is non-violent acts to his home place. He is the person you would see and say wow, you look great</p>
+              <h1 class="page-title">About Martin Luther king Jr </h1>
+              <p> Martin Luther King Jr. is the main man who was Murdered by the cause of racism for inforcing is non-violent acts to his home place. He is the person you would see and say wow, you look great.
+              I have seen some things that some people would not. The h3 is in the text and then paintte it in the side bar and then they have to float and put up next to the sidebar then float it to the right and set the margin top to 10px. I have another idea for this webiste, but i don not know what it is called and they should make it look really well. I can also comferm that everythng that this can make is in javascropt and i have to make ti in a few minutes.</p>
+              
+              <p>
+              Mr. Ware if you are readng this, i hope this is a really great thing show... look :)  ... Omg that was soo funny i hope you can see the calls and notifications are lsilcnces when you have your iphone in the sleep mode and airplane mode, please make sure that yur phone will not blow up like thoes bombs that "you know who" has been making in the begginging of the new phone series. The yourube channel has to be in the website or i wil cry of super sadness of the times of the things and the icecream. I hope your not reading this beacuse it makes no sense.
+              </p>
               </article>
+          
+              <aside id="sidebar">
+                  <div class="dark">
+                <h3> What we do</h3>
+                <p> I am one of those people who are super annoying to lsitne to witht eh make believe stories i make otu of nowhere jsut so i can have the sapifaction of soing things my way amaking me look good and super intersting to the people lsitne. It almost neve works and i have to make somehting up and then this guy is looking at me like a spuer weird man he is. I dont know why he is laughting under is breath. Oh 
+                wait that is issac, a boy who is very dependant on getting snacks to stay in class and work on stuff.</p>
+                  </div>
+             </aside>
         </div>
     </section>
    
